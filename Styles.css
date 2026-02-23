@@ -1,0 +1,29 @@
+body {
+        background-color: black;
+        font-family: Arial;
+      }
+      button{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        font-size: 24px;
+        margin: 2px;
+      }
+      .left-side-buttons{
+        background-color: rgb(56, 51, 51);
+      }
+      .opeators-button{
+        background-color: rgb(218, 122, 12);
+      }
+      .clearText{
+        font-size: 17px;
+      }
+      .js-displayText{
+        color: white;
+        font-size: 50px;
+        margin-bottom: 0;
+        margin-left: 6px;
+        margin-top: 20px;
+      }

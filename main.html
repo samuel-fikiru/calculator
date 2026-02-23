@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Styles.css">
+  </head>
+  <body style="margin-left: 20px;">
+    <p class="js-displayText"></p>
+    <p>
+     <button class="left-side-buttons" onclick="
+        updateFunction('1');
+        ">1</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('2');
+        ">2</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('3');
+        ">3</button>
+      <button class="opeators-button" onclick="
+        updateFunction(' + ');
+        ">+</button>
+    </p>
+    <p>
+     <button class="left-side-buttons" onclick="
+        updateFunction('4');
+        ">4</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('5');
+        ">5</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('6');
+        ">6</button>
+      <button class="opeators-button"  onclick="
+        updateFunction(' - ');
+        ">-</button>
+    </p>
+    <p>
+     <button class="left-side-buttons" onclick="
+        updateFunction('7');
+        ">7</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('8');
+        ">8</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('9');
+        ">9</button>
+      <button  class="opeators-button"  onclick="
+        updateFunction(' * ');
+        ">*</button> 
+    </p>
+    <p>
+     <button class="left-side-buttons" onclick="
+        updateFunction('0');
+        ">0</button>
+      <button class="left-side-buttons" onclick="
+        updateFunction('.');
+        ">.</button>
+      <button  class="left-side-buttons" onclick="
+        calculation = eval(calculation);
+        document.querySelector('.js-displayText').innerHTML = calculation;
+      ">=</button>
+      <button class="opeators-button"  onclick="
+        updateFunction(' / ');
+        ">/</button>
+    </p>
+    <p>
+     <button  class="left-side-buttons clearText"  onclick="
+        calculation ='';
+        document.querySelector('.js-displayText').innerHTML = '';
+        localStorage.setItem('calculation', '');
+      ">Clear</button>      
+    </p>
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>
